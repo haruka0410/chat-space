@@ -96,11 +96,11 @@
       background-color: #fafafa;
       height: calc(100vh - 190px);
       padding: 35px 40px;
-      &__message-top {
+      &__message {
         padding-bottom:46px;
         @include message-style;
       }
-      &__message-second {
+      &__message {
         @include message-style;
       }
     }
