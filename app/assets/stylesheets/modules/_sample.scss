@@ -1,0 +1,27 @@
+@mixin flexbox {
+  display: flex;
+}
+
+@mixin font-style {
+  font-weight: bold;
+}
+
+@mixin message-style {
+  &__upper-info {
+    display: flex;
+    margin-bottom: 12px;
+    &__left-info {
+      color: #333333;
+      font-size: 16px;
+    }
+    &__right-info {
+      color: #999999;
+      font-size: 12px;
+      margin-left: 5px;
+    }
+  }
+  &__text {
+    color: #434A54;
+    font-size: 14px;
+  }
+}
