@@ -100,9 +100,6 @@
         padding-bottom:46px;
         @include message-style;
       }
-      &__message {
-        @include message-style;
-      }
     }
     &__message-form {
       background-color: #d2d2d2;
