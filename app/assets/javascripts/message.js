@@ -39,7 +39,7 @@ $(function(){
          return html;
         };
      }
-  $('#new_message').on('submit', function(e){
+  $('.new-message').on('submit', function(e){
     e.preventDefault()
     var formData = new FormData(this);
     var url = $(this).attr('action');
@@ -72,6 +72,7 @@ $(function(){
       data: {id: last_message_id}
     })
     .done(function(messages) {
+      console.log(messages);
       if (messages.length !== 0) {
         var insertHTML = '';
         $.each(messages, function(i, message) {
@@ -87,5 +88,5 @@ $(function(){
   };
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
     setInterval(reloadMessages, 7000);
-  }
+  }   
 });
